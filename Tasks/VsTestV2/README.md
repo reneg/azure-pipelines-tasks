@@ -23,7 +23,7 @@ Use the following options to select tests and control how the tests are run
 
 - **Run Settings File:** Path to a runsettings or testsettings file can be specified here. The path can be to a file in the repository or a path to file on disk. Use $(Build.SourcesDirectory) to access the root project folder. [Click here](https://msdn.microsoft.com/library/jj635153.aspx) for more information on these files.
 
-- **Override TestRun Parameters:** Override parameters defined in the TestRunParameters section of the runsettings file. For example: Platform=$(platform);Port=8080
+- **Override TestRun Parameters:** Override parameters defined in the TestRunParameters section of the runsettings file. For example: -Platform $(platform) -Port 8080
 [Click here](https://blogs.msdn.com/b/visualstudioalm/archive/2015/09/04/supplying-run-time-parameters-to-tests.aspx) for more information on overriding parameters. 
 
 - **Code Coverage Enabled:** If set, this will collect code coverage information during the run and upload the results to the server. This is supported for .Net and C++ projects only. [Click here](https://msdn.microsoft.com/library/jj159530.aspx) to learn more about how to customize code coverage and manage inclusions and exclusions. 
